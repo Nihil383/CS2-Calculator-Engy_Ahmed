@@ -20,3 +20,17 @@ T3 div(T1 a, T2 b) {
     }
     return a / b;
 }
+
+int fact (int a) {
+	if (a == 0 || a == 1) {
+        	return 1;
+    	}
+    	return a * fact(a - 1);
+}
+
+int gcd {
+	if (b == 0) {
+        	return a;
+    	}
+    	return gcd(b, a % b);
+}
