@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <cmath>
 #include <ctime>
+using namespace std;
 
 template <typename T1, typename T2, typename T3 = decltype(T1{} + T2{})>
 T3 add(T1 a, T2 b) {
@@ -43,7 +44,7 @@ int gcd {
 }
 
 int lcd (int a, int b) {
-	return ((a*b)/(gcd(a,b));
+	return ((a*b)/(gcd(a,b)));
 }
 
 void seedRandom() {
