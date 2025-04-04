@@ -10,3 +10,7 @@ T3 div(T1 a, T2 b);
 
 int gcd (int a, int b);
 int fact (int a);
+
+int lcd(int a, int b);
+int rndm(int a);
+void seedRandom();
