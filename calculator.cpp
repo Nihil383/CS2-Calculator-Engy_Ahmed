@@ -5,23 +5,19 @@
 #include <ctime>
 using namespace std;
 
-template <typename T1, typename T2, typename T3 = decltype(T1{} + T2{})>
-T3 add(T1 a, T2 b) {
+double add(double a, double b) {
 	return a + b;
 }
 
-template <typename T1, typename T2, typename T3 = decltype(T1{} - T2{})>
-T3 sub(T1 a, T2 b) {
+double sub(double a, double b) {
 	return a - b;
 }
 
-template <typename T1, typename T2, typename T3 = decltype(T1{} * T2{})>
-T3 multi(T1 a, T2 b) {
+double multi(double a, double b) {
     return a * b;
 }
 
-template <typename T1, typename T2, typename T3 = decltype(T1{} / T2{})>
-T3 div(T1 a, T2 b) {
+double divd(double a, double b) {
     if (b == 0) {
         cout << "Division failed, division by zero is undefined/n";
 	return a;
@@ -36,15 +32,15 @@ int fact (int a) {
     	return a * fact(a - 1);
 }
 
-int gcd {
+int cstGcd (int a, int b) {
 	if (b == 0) {
         	return a;
     	}
-    	return gcd(b, a % b);
+    	return cstGcd(b, a % b);
 }
 
-int lcd (int a, int b) {
-	return ((a*b)/(gcd(a,b)));
+int lcm (int a, int b) {
+	return ((a*b)/(cstGcd(a,b)));
 }
 
 void seedRandom() {
